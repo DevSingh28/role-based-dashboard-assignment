@@ -146,7 +146,7 @@ export const LoginUser = async (req, res) => {
 
         if (result.rows.length === 0) {
             return res.status(401).json({
-                message: "Invalid email or password!"
+                message: "User not exist!"
             });
         }
 
